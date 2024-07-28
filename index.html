@@ -1,46 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Poder da Palavra</title>
-    <link rel="shortcut icon" type="imagex/png" href="./images/icon.ico">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            color: #333 ;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
         }
-        h1 {
-            color: #8a6a6a;
+        .header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        p {
-            color: #524d4d;
+        .header h1 {
+            margin: 0;
+            margin-left: 10px;
         }
         .menu {
             display: flex;
             justify-content: center;
-            background-color: #f0f0f0;
-            padding: 0px;
+            background-color: #333;
+            padding: 10px 0;
         }
         .menu a {
             text-decoration: none;
-            color: #333;
-            padding: 10px 20px;
+            color: #fff;
+            padding: 15px 25px;
             margin: 0 10px;
-            border: 2px solid #333;
             border-radius: 5px;
             transition: background-color 0.3s, color 0.3s;
         }
         .menu a:hover {
-            background-color: #333;
+            background-color: #4CAF50;
             color: #fff;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .content h2 {
+            color: #333;
+        }
+        .content p {
+            line-height: 1.6;
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <header>   <nav class="menu">
+
+    <div class="header">
+        <img src="icon.ico" alt="Bíblia" width="50" height="50">
+        <h1>O Poder da Palavra</h1>
+    </div>
+
+    <nav class="menu">
         <a href="#estudos-biblicos">Estudos Bíblicos</a>
         <a href="#devocionais">Devocionais</a>
         <a href="#comentarios">Comentários</a>
@@ -48,51 +74,30 @@
         <a href="#curso-basico">Curso Básico</a>
     </nav>
 
-    <!-- Conteúdo fictício para demonstração -->
-   
-   
-  
-  
-        <h1>O Poder da Palavra</h1>
-    </header>
-    <main>
-        <p> Bem-vindo ao site O Poder da Palavra, um portal dedicado ao aprofundamento do conhecimento e compreensão das Escrituras Sagradas. Nosso objetivo é proporcionar recursos valiosos e acessíveis para estudiosos, religiosos e todos aqueles interessados em explorar a Bíblia de forma mais profunda.
-            
-            Aqui, você encontrará:<hr>
-            <div id="estudos-biblicos">
-                <h2>Estudos Bíblicos</h2>
-                <p>Conteúdo sobre estudos bíblicos.</p>
-            </div> 
-            Estudos Bíblicos: Materiais detalhados que abordam temas específicos, livros da Bíblia e personagens bíblicos.<hr>
-            <div id="devocionais">
-                <h2>Devocionais</h2>
-                <p>Conteúdo sobre devocionais diários.</p>
-            </div>
-            Devocionais Diários: Reflexões diárias para inspirar e fortalecer sua fé.<hr>
-            <div id="comentarios">
-                <h2>Comentários</h2>
-                <p>Conteúdo de comentários bíblicos.</p>
-            </div>
-            Comentários Bíblicos: Análises e interpretações de versículos e passagens chave.<hr>
-            Recursos de Aprendizado: Vídeos, podcasts e artigos escritos por teólogos e estudiosos renomados.<hr>
-           <div id="comunidade">
-            <h2>Comunidade</h2>
-            <p>Conteúdo da comunidade de fé.</p>
-        </div>
-            Comunidade de Fé: Fóruns e grupos de discussão para compartilhar insights e aprender com outros usuários.<hr>
-            <div id="curso-basico">
-                <h2>Curso Básico</h2>
-                <p>Conteúdo do curso básico de estudos bíblicos.</p>
-           
-            <p>Deixo a disposição um curso básico de teologia e 
-                também alguns esboços de mensagem .</p> <hr>
-            </div>
-            <p>Nosso compromisso é com a verdade bíblica e o crescimento espiritual de nossos visitantes. Junte-se a nós nesta jornada de descoberta e enriquecimento espiritual. Que sua experiência aqui seja abençoada e iluminadora.</p> 
-    </main>
-    <footer>
-        <p>Sobre nós: Este site foi criado inicialmente por Rodrigo Kowalski </p>
-        <p>&copy; 2024 O Poder da Palavra todos os
-            direitos reservados</p>
-    </footer>
+    <div class="content" id="estudos-biblicos">
+        <h2>Estudos Bíblicos</h2>
+        <p>Aprofunde seu conhecimento com nossos estudos detalhados sobre as Escrituras. Explore temas variados e descubra novas perspectivas.</p>
+    </div>
+
+    <div class="content" id="devocionais">
+        <h2>Devocionais</h2>
+        <p>Encontre inspiração diária com nossos devocionais. Cada reflexão foi escrita para ajudar a fortalecer sua fé e guiar seu dia.</p>
+    </div>
+
+    <div class="content" id="comentarios">
+        <h2>Comentários</h2>
+        <p>Acesse análises e interpretações de versículos e passagens bíblicas, elaboradas por estudiosos e teólogos renomados.</p>
+    </div>
+
+    <div class="content" id="comunidade">
+        <h2>Comunidade</h2>
+        <p>Participe de nossa comunidade online e compartilhe suas experiências e aprendizados com outros fiéis. Juntos, crescemos mais.</p>
+    </div>
+
+    <div class="content" id="curso-basico">
+        <h2>Curso Básico</h2>
+        <p>Inicie sua jornada de aprendizado com nosso curso básico de estudos bíblicos. Ideal para quem está começando ou quer revisar conceitos fundamentais.</p>
+    </div>
+
 </body>
 </html>
